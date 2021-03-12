@@ -7,9 +7,9 @@ tap "homebrew/cask-fonts"
 # updater tool for apps
 tap "buo/cask-upgrade"
 
-# osx
-brew "mackup"
+# setup xcode / app store management
 brew "mas"
-
-# setup xcode
 mas "Xcode", id: 497799835 unless system '/usr/bin/xcode-select -p'
+
+# dotfiles
+brew "mackup"

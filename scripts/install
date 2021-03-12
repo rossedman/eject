@@ -34,3 +34,11 @@ brew bundle --force install --file=${code_dir}/bootstrap/Brewfile
 
 # install application/utilities/etc
 brew bundle --force install --file=${code_dir}/bootstrap/Brewfile.apps
+
+# install mackup configuration
+# NOTE: must be logged in to iCloud for this to work
+cp "${code_dir}/config/mackup.cfg" ~/.mackup.cfg
+# install extra configuration
+cp -R "${code_dir}/config/mackup" ~/.mackup
+# restore from iCloud
+mackup restore
