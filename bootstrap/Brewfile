@@ -1,0 +1,15 @@
+# setup cask
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+# updater tool for apps
+tap "buo/cask-upgrade"
+
+# osx
+brew "mackup"
+brew "mas"
+
+# setup xcode
+mas "Xcode", id: 497799835

@@ -1,0 +1,81 @@
+# cask args
+cask_args appdir: "~/Applications", require_sha: true, force: true
+
+# taps
+cask "1password"
+cask "1password-cli"
+cask "caffeine"
+cask "docker"
+cask "google-chrome"
+cask "iterm2"
+cask "licecap"
+cask "multipass"
+cask "slack"
+cask "spotify"
+cask "vagrant"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "zoom"
+
+# utilities
+brew "awscli"
+brew "bash"
+brew "gnupg"
+brew "htop"
+brew "httpie"
+brew "jq"
+brew "ripgrep"
+brew "rsync"
+brew "tree"
+brew "yq"
+
+# ssh/network
+brew "curl"
+brew "openssl@1.1"
+brew "nmap"
+brew "tmux"
+brew "telnet"
+brew "sshuttle"
+brew "wget"
+
+# editors
+brew "vim"
+
+# shell
+brew "zsh"
+
+# git
+brew "gh"
+brew "git"
+brew "tig"
+
+# languages
+brew "go"
+brew "go@1.13"
+brew "go@1.15"
+brew "protobuf"
+brew "rbenv"
+brew "ruby"
+
+# containers/kube
+brew "docker-clean"
+brew "etcd"
+brew "helm"
+brew "istioctl"
+brew "k3d"
+brew "kubernetes-cli"
+brew "podman"
+
+# hashicorp - terraform
+brew "atlantis"
+brew "checkov"
+brew "tflint"
+brew "warrensbox/tap/tfswitch"
+
+# hashicorp - other
+brew "consul"
+brew "nomad"
+brew "vault"
+
+# apps
+brew "hugo"
