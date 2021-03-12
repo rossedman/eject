@@ -1,6 +1,10 @@
 # cask args
 cask_args appdir: "~/Applications", require_sha: true, force: true
 
+# apple store
+mas "bear", id: 1091189122
+mas "flow", id: 1423210932
+
 # taps
 cask "1password"
 cask "1password-cli"
