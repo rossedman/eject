@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -ex
+
+install_eject() {
+    local tmp_dir=$(mktemp -d -t eject)
+    local code_dir="$tmp_dir/eject-main"
+
+    curl -fsSL -o "${tmp_dir}/eject.zip" -fsSL https://github.com/rossedman/eject/archive/main.zip
+    unzip -qq "${tmp_dir}/eject.zip" -d "${tmp_dir}"
+
+    echo "${code_dir}"
+}
+
+# install code into tmp dir
+code_dir=$(install_eject)
+trap "rm -rf ${code_dir}" EXIT
+
+# install mackup configuration
+# NOTE: must be logged in to iCloud for this to work
+cp "${code_dir}/config/mackup.cfg" ~/.mackup.cfg
+
+# backup settings in line with current config in repo
+mackup backup
