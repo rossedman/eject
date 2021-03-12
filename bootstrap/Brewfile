@@ -12,4 +12,4 @@ brew "mackup"
 brew "mas"
 
 # setup xcode
-mas "Xcode", id: 497799835
+mas "Xcode", id: 497799835 unless system '/usr/bin/xcode-select -p'
