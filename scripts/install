@@ -3,16 +3,26 @@
 # this install script is meant to be installed _before_ cloning the
 # repo since git may not exist on the computer being bootstrapped
 
+set -ex
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# TODO: download repo here so we can access brewfiles
-tmp_dir=$(mktemp -d -t ci-XXXXXXXXXX)
+cleanup() {
+    rm -rf $tmp_dir
+}
+
+trap 'cleanup' EXIT
+
+tmp_dir=$(mktemp -d -t eject)
+code_dir="$tmp_dir/eject-main"
+
+# download code and extract
+curl -o "${tmp_dir}/eject.zip" -fsSL https://github.com/rossedman/eject/archive/main.zip
+unzip "${tmp_dir}/eject.zip" -d "${tmp_dir}"
 
 # install basics required for bootstrapping a system
-# like xcode, mas, cask, etc.
-#   brew bundle --force cleanup --file=bootstrap/Brewfile
-brew bundle --force install --file=bootstrap/Brewfile
+brew bundle --force install --file=${code_dir}/bootstrap/Brewfile
 
 # install application/utilities/etc
-brew bundle --force install --file=bootstrap/Brewfile.apps
+brew bundle --force install --file=${code_dir}/bootstrap/Brewfile.apps
