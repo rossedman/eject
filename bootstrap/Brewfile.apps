@@ -4,8 +4,13 @@ cask_args appdir: "~/Applications", require_sha: true, force: true
 # apple store
 mas "bear", id: 1091189122
 mas "flow", id: 1423210932
+mas "todoist", id: 585829637
 
 # taps
+tap "sachaos/todoist"
+brew "todoist"
+
+# cask
 cask "1password"
 cask "1password-cli"
 cask "caffeine"
@@ -24,6 +29,7 @@ cask "zoom"
 # utilities
 brew "awscli"
 brew "bash"
+brew "fzf"
 brew "gnupg"
 brew "htop"
 brew "httpie"
