@@ -22,6 +22,10 @@ install_eject() {
     echo "${code_dir}"
 }
 
+install_oh_my_zsh() {
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+}
+
 # install homebrew if doesn't exist
 install_brew 
 
@@ -34,6 +38,9 @@ brew bundle --force install --file=${code_dir}/bootstrap/Brewfile
 
 # install application/utilities/etc
 brew bundle --force install --file=${code_dir}/bootstrap/Brewfile.apps
+
+# install oh-my-zsh
+install_oh_my_zsh
 
 # install mackup configuration
 # NOTE: must be logged in to iCloud for this to work
