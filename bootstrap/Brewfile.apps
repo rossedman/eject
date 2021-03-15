@@ -25,7 +25,6 @@ cask "zoom"
 
 # taps
 tap "sachaos/todoist"
-tap "miserlou/loop", "https://github.com/Miserlou/Loop.git"
 
 # utilities
 brew "awscli"
@@ -37,7 +36,6 @@ brew "fd"
 brew "fzf"
 brew "gnupg"
 brew "kdabir/tap/has"
-brew "loop"
 brew "htop"
 brew "httpie"
 brew "hyperfine"
