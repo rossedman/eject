@@ -10,6 +10,7 @@ mas "todoist", id: 585829637
 cask "1password"
 cask "1password-cli"
 cask "caffeine"
+cask "discord"
 cask "docker"
 cask "google-chrome"
 cask "iterm2"
@@ -65,6 +66,7 @@ brew "zsh"
 
 # git
 brew "gh"
+brew "ghq"
 brew "git"
 brew "git-extras"
 brew "git-quick-stats"

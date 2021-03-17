@@ -40,7 +40,7 @@ brew bundle --force install --file=${code_dir}/bootstrap/Brewfile
 brew bundle --force install --file=${code_dir}/bootstrap/Brewfile.apps
 
 # install oh-my-zsh
-install_oh_my_zsh
+# install_oh_my_zsh
 
 # install mackup configuration
 # NOTE: must be logged in to iCloud for this to work
