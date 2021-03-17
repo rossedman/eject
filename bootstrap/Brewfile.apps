@@ -6,10 +6,6 @@ mas "bear", id: 1091189122
 mas "flow", id: 1423210932
 mas "todoist", id: 585829637
 
-# taps
-tap "sachaos/todoist"
-brew "todoist"
-
 # cask
 cask "1password"
 cask "1password-cli"
@@ -22,20 +18,33 @@ cask "multipass"
 cask "slack"
 cask "spotify"
 cask "vagrant"
+cask "via"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "zoom"
 
+# taps
+tap "sachaos/todoist"
+
 # utilities
 brew "awscli"
+brew "bat"
 brew "bash"
+brew "direnv"
+brew "exa"
+brew "fd"
 brew "fzf"
 brew "gnupg"
+brew "kdabir/tap/has"
 brew "htop"
 brew "httpie"
+brew "hyperfine"
 brew "jq"
+brew "nnn"
+brew "peco"
 brew "ripgrep"
 brew "rsync"
+brew "todoist"
 brew "tree"
 brew "yq"
 
@@ -57,6 +66,8 @@ brew "zsh"
 # git
 brew "gh"
 brew "git"
+brew "git-extras"
+brew "git-quick-stats"
 brew "tig"
 
 # languages
