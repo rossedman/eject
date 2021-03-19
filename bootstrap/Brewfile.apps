@@ -56,7 +56,6 @@ brew "openssl@1.1"
 brew "nmap"
 brew "tmux"
 brew "telnet"
-brew "sshuttle"
 brew "wget"
 
 # editors
@@ -106,4 +105,6 @@ brew "vault"
 
 # apps
 brew "hugo"
+brew "ngrok"
+brew "sshuttle"
 brew "twilio"
