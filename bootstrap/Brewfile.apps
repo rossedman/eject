@@ -26,6 +26,7 @@ cask "zoom"
 
 # taps
 tap "sachaos/todoist"
+tap "twilio/brew"
 
 # utilities
 brew "awscli"
@@ -62,6 +63,7 @@ brew "wget"
 brew "vim"
 
 # shell
+brew "starship"
 brew "zsh"
 
 # git
@@ -77,6 +79,8 @@ brew "go"
 brew "go@1.13"
 brew "go@1.15"
 brew "protobuf"
+brew "nvm"
+brew "pyenv"
 brew "rbenv"
 brew "ruby"
 
@@ -102,3 +106,4 @@ brew "vault"
 
 # apps
 brew "hugo"
+brew "twilio"
